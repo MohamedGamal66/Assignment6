@@ -1,0 +1,12 @@
+@media screen and (max-width:995px) {
+    .sign-in {
+        border-top: 1px solid gray;
+        padding-top: 4%;
+    }
+    .sign-in li {
+        width: 100%;
+    }
+    .sign-in button {
+        width: 100%;
+    }
+}
