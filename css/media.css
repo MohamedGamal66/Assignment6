@@ -9,4 +9,19 @@
     .sign-in button {
         width: 100%;
     }
+    header .text-content {
+        text-align: center;
+        align-items: center !important;
+        justify-content: start !important;
+        padding-top: 40% !important;
+        h1 {
+            font-size: 32px;
+        }
+    }
+    .button {
+        flex-direction: column;
+        button {
+            width: 100%;
+        }
+    }
 }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games website</title>
     <!-- favicon -->
-     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <!-- link font awesome library -->
     <link rel="stylesheet" href="css/all.min.css">
     <!-- link Bootstrap css -->
@@ -15,14 +15,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Days+One&family=Exo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- media query css -->
-     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/media.css">
     <!-- main css style stylesheet -->
-     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary p-3" data-bs-theme="dark">
+<body class="">
+    <!--**************************** navbar section ****************************-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-3 fixed-top w-100 navbar-nav-scroll" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand second-font text-main-color fw-bold me-4 d-flex gap-3" href="#Home"><span class=""><i class="fa-solid fa-gamepad"></i></span>GameArena</a>
+            <a class="navbar-brand second-font text-main-color fw-bold me-4 d-flex gap-3" href="index.html"><span class=""><i class="fa-solid fa-gamepad"></i></span>GameArena</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon bg-body"></span>
             </button>
@@ -52,12 +53,46 @@
             </div>
         </div>
     </nav>
-    <header></header>
+    <!--**************************** navbar section end ****************************-->
+    <!--**************************** header section ****************************-->
+    <header class="min-vh-100 bg-transparent">
+        <div class="container-fluid">
+            <div class="row py-3">
+                <div class="text-content col-lg-6 col-md-6  px-4 vh-100  d-flex flex-column justify-content-center align-items-start">
+                    <div class="inner">
+                    <h1 class="first-font fw-bold fs-40px text-white">THE ULTIMATE<br><span class="text-main-color">GAMING</span><br>EXPERIENCE</h1>
+                    <p class="second-font text-second-color">Join millions of gamers worldwide in the most competitive eSports<br>tournaments. Experience next-level gaming with cutting-edge technology and endless possibilities.</p>
+                    <div class="button d-flex gap-3">
+                    <button class="start-btn btn text-black bg-main-color fw-bold second-font px-4 py-3 border-1 border-main-color overflow-hidden position-relative">Start Gaming Now</button>
+                    <button class="watch-btn btn text-main-color second-font fw-bold px-4 py-3 border-1 border-main-color overflow-hidden position-relative">Watch Tournaments</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="image-content col-lg-6 col-md-12  vh-100  py-5 px-1 d-flex justify-content-center align-items-center">
+                    <div class="inner w-90 h-75 rounded-4 position-relative">
+                        <div class="active-players bg-body-tertiary w-30 d-flex text-center align-items-center  py-3 px-2 position-absolute rounded-2">
+                            <span class="text-main-color"><i class="fa-solid fa-trophy fa-lg"></i></span>
+                            <span>
+                                <span class="text-dark-emphasis">Active Players</span>
+                                <span class="first-font text-white">2.5M+</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--**************************** header section end ****************************-->
     <main>
-        <section></section>
+        <section class="our-game container-fluid vh-100 bg-body-tertiary text-center py-5">
+            <div class="header-section py-5 ">
+                <h2 class="second-font text-main-color fs-6 fw-bold position-relative">OUR GAMES</h2>
+                <p class="first-font fw-bold text-white fs-1 py-3">Our Latest Games</p>
+            </div>
+        </section>
     </main>
     <footer></footer>
-    <!-- script Bootstrap [bundle] -->
-     <script src="js/Bootstrap.bundle.min.js"></script>
+    <!--**************************** script Bootstrap [bundle] ****************************-->
+    <script src="js/Bootstrap.bundle.min.js"></script>
 </body>
 </html>
