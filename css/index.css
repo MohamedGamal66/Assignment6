@@ -40,7 +40,7 @@
     width: 30%;
 }
 .h-60 {
-    height: 70%;
+    height: 85%;
 }
 /*================================= general style =================================*/
 /*================================= navbar style =================================*/
@@ -77,6 +77,9 @@
 }
 .sign-in button:hover::after {
     left: 100%;
+}
+.navbar {
+    border-bottom: 0.2px solid #1E2939;
 }
 /*================================= header style =================================*/
 body {
@@ -128,7 +131,7 @@ header .image-content .inner .active-players {
     bottom: -8%;
     left: -8%;
 }
-.our-game .header-section h2,p {
+.our-game .header-section h2,.header-section p {
     letter-spacing: 3px;
 }
 .our-game .header-section h2::after {
@@ -148,4 +151,33 @@ header .image-content .inner .active-players {
     position: absolute;
     top: 35%;
     left: 38%;
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled) {
+    position: static;
+    gap: 0;
+}
+.slider-buttons button .arrow i {
+    border: 2px solid #364153;
+}
+.slider-buttons .view-all-btn:hover {
+    background-color: var(--main-color);
+}
+.our-game .carousel .carousel-inner .carousel-item .card-one {
+    background-image: url(../images/latest-games-1.png) !important;
+    background-size: cover;
+    background-position: center;
+}
+.our-game .carousel .carousel-inner .carousel-item .card-two {
+    background-image: url(../images/latest-games-2.png) !important;
+    background-size: cover;
+    background-position: center;
+}
+.our-game .carousel .carousel-inner .carousel-item .card-three {
+    background-image: url(../images/latest-games-3.png) !important;
+    background-size: cover;
+    background-position: center;
+}
+.our-game .carousel .carousel-inner .carousel-item .row .col div:hover {
+    border: 1.5px solid var(--main-color) !important;
+    box-shadow: 0px -40px 50px  #c9fe1cd1 inset !important;
 }
