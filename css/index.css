@@ -10,12 +10,27 @@
 .second-font {
     font-family: "Chakra Petch", sans-serif;
 } 
-.fs-40px {
+.fs-60px {
     font-size: 60px;
+}
+.fs-14px {
+    font-size: 12px;
+}
+.fs-10px {
+    font-size: 10px;
 }
 /*================================= backgrounds =================================*/
 .bg-body-tertiary {
     background-color: #0b0e13 !important;
+}
+.bg-second-color {
+    background-color: #161715a7;
+}
+.bg-third-color {
+    background-color: #1A1A1A;
+}
+.bg-fourth-color {
+    background-color: #1E2939;
 }
 .bg-main-color {
     background-color: var(--main-color);
@@ -30,17 +45,29 @@
 .border-main-color {
     border-color: var(--main-color) !important;
 }
+.border-fourth-color {
+    border-color: #1E2939 !important;
+}
 .py-section {
     padding-block: 50px;
 }
 .w-90 {
     width: 90%;
 }
+.w-80 {
+    width: 80%;
+}
 .w-30 {
     width: 30%;
 }
-.h-60 {
-    height: 85%;
+.w-200px {
+    width: 300px;
+}
+.h-300px {
+    height: 300px;
+}
+.h-350px {
+    height: 350px;
 }
 /*================================= general style =================================*/
 /*================================= navbar style =================================*/
@@ -134,7 +161,7 @@ header .image-content .inner .active-players {
 .our-game .header-section h2,.header-section p {
     letter-spacing: 3px;
 }
-.our-game .header-section h2::after {
+.header-section h2::after {
     content: "";
     width: 6%;
     height: 15%;
@@ -143,7 +170,7 @@ header .image-content .inner .active-players {
     top: 35%;
     right: 38%;
 }
-.our-game .header-section h2::before {
+.header-section h2::before {
     content: "";
     width: 6%;
     height: 15%;
@@ -162,22 +189,150 @@ header .image-content .inner .active-players {
 .slider-buttons .view-all-btn:hover {
     background-color: var(--main-color);
 }
-.our-game .carousel .carousel-inner .carousel-item .card-one {
-    background-image: url(../images/latest-games-1.png) !important;
-    background-size: cover;
-    background-position: center;
+.our-game .carousel .carousel-inner .carousel-item .row .col .card:hover img {
+    transform: scale(1.2);
+    transition: transform 0.5s;
+    .card-content {
+        border: none !important;
+        box-shadow: none !important;
+    }
 }
-.our-game .carousel .carousel-inner .carousel-item .card-two {
-    background-image: url(../images/latest-games-2.png) !important;
-    background-size: cover;
-    background-position: center;
+.our-game .carousel .carousel-inner .carousel-item .row .col .card-content {
+    top: -20%;
+    transition: top 0.5s;
 }
-.our-game .carousel .carousel-inner .carousel-item .card-three {
-    background-image: url(../images/latest-games-3.png) !important;
-    background-size: cover;
-    background-position: center;
+.our-game .carousel .carousel-inner .carousel-item .row .col .card:hover .card-content{
+    top: 8%;
 }
-.our-game .carousel .carousel-inner .carousel-item .row .col div:hover {
+.our-game .carousel .carousel-inner .carousel-item .row .col p {
+    bottom: -30%;
+    transition: bottom 0.5s;
+}
+.our-game .carousel .carousel-inner .carousel-item .row .col div:hover p {
+    bottom: 6%;
+}
+.our-game .carousel .carousel-inner .carousel-item .row .col .card:hover::after {
+    content: "";
+    width: 100%;
+    height: 100%;
     border: 1.5px solid var(--main-color) !important;
-    box-shadow: 0px -40px 50px  #c9fe1cd1 inset !important;
+    box-shadow: 0px -60px 60px 0px  #c9fe1cd1 inset !important;
+    position: absolute;
+    border-radius: 5%;
+}
+.cards #custom {
+    border: 1px solid #1E2939 !important;
+    position: relative;
+    overflow: hidden;
+}
+.cards #custom:hover {
+    border: 1px solid #CBFE1C !important;
+    span {
+        background-color: #CBFE1C;
+    }
+    i {
+        color: #1A1A1A;
+    }
+}
+.cards #custom::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: linear-gradient(-45deg,transparent 50%,#CBFE1C,#CBFE1C 50%);
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    transition: all 0.2s;
+}
+.cards #custom:hover:after {
+    top: 5%;
+    left: 5%;
+}
+.cards #custom::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-image: linear-gradient(-45deg,#CBFE1C,#CBFE1C 50%,transparent 50%);
+    position: absolute;
+    bottom: -5%;
+    right: -5%;
+    transition: all 0.2s;
+}
+.cards #custom:hover:before {
+    bottom: 5%;
+    right: 5%;
+}
+.conveyor-card {
+    width: 100%;
+    height: 600px;
+    background-image: radial-gradient(#CBFE1C 2%,#0b0e13 45%);
+    background-position: center;
+}
+.conveyor-card::after {
+    content: " ";
+    width: 50%;
+    height: 0.25%;
+    background-image: linear-gradient(to right, #191818 5%,#CBFE1C 10%,  
+#CBFE1C 20%, #CBFE1C 40%, #CBFE1C 40%, #CBFE1C 60%,  
+#CBFE1C 60%, #CBFE1C 80%,#CBFE1C 90% ,#191818 95%);
+    box-shadow: 0px 0px 15px 1px  #c9fe1cd1;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
+.conveyor-card .rtl-card {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-top: 15%;
+    background-image: linear-gradient(to right, #37343449 5%,transparent 10%,  
+    transparent 20%, transparent 40%, transparent 40%, transparent 60%,  
+    transparent 60%, transparent 80%,transparent 90% ,#37343449 95%);
+}
+.conveyor-card .ltr-card {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-top: 2%;
+    margin-bottom: 10%;
+    background-image: linear-gradient(to right, #37343449 5%,transparent 10%,  
+    transparent 20%, transparent 40%, transparent 40%, transparent 60%,  
+    transparent 60%, transparent 80%,transparent 90% ,#37343449 95%);
+}
+.rtl-card img {
+    width: 100px;
+    animation: 5s scroll infinite linear;
+}
+.ltr-card img {
+    width: 100px;
+    animation: 5s scroll infinite linear reverse;
+}
+@keyframes scroll {
+    0% {
+        transform: translatex(0);
+    }
+    100% {
+        transform: translatex(-50%);
+    }
+}
+.our-team .card::after {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: grayscale(100%);
+    transition: top 1s;
+}
+.our-team .card:hover::after {
+    top: -100%;
+}
+.our-team .card .card-body {
+    bottom: 0;
+}
+.our-team .card .card-body .team {
+    transform: rotate(90deg);
+    bottom: 30%;
+    right: 0%;
 }

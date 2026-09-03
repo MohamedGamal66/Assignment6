@@ -24,4 +24,13 @@
             width: 100%;
         }
     }
+    .what-we-do p:last-child {
+        font-size: 22px !important;
+    }
+    .what-we-do .cards .card span {
+        margin-top: 15px;
+    }
+    .what-we-do .cards .card p {
+        font-size: 16px !important;
+    }
 }

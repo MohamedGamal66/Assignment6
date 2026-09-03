@@ -66,13 +66,13 @@
     </nav>
     <!--**************************** navbar section end ****************************-->
     <!--**************************** header section ****************************-->
-    <header class="min-vh-100 bg-transparent">
+    <header class="min-vh-100 bg-transparent" id="Home">
         <div class="container-fluid">
             <div class="row py-3">
                 <div
                     class="text-content col-lg-6 col-md-6  px-4 vh-100  d-flex flex-column justify-content-center align-items-start">
                     <div class="inner">
-                        <h1 class="first-font fw-bold fs-40px text-white">THE ULTIMATE<br><span
+                        <h1 class="first-font fw-bold fs-60px text-white">THE ULTIMATE<br><span
                                 class="text-main-color">GAMING</span><br>EXPERIENCE</h1>
                         <p class="second-font text-second-color">Join millions of gamers worldwide in the most
                             competitive eSports tournaments. Experience next-level gaming with cutting-edge technology
@@ -106,67 +106,446 @@
     <!--**************************** header section end ****************************-->
     <!--**************************** main sections ****************************-->
     <main>
-    <!--**************************** our-game section ****************************-->
-        <section class="our-game container-fluid bg-body-tertiary text-center py-3">
-    <!--**************************** header content of section ****************************-->
-            <article class="header-section py-5 ">
-                <h2 class="second-font text-main-color fs-6 fw-bold position-relative">OUR GAMES</h2>
-                <p class="first-font fw-bold text-white fs-1 py-3">Our Latest Games</p>
-            </article>
-    <!--**************************** header content of section end ****************************-->
-    <!--************************************ game slider ************************************-->
-            <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-inner p-2">
-                    <div class="carousel-item active">
-                        <div class="row row-cols-1 row-cols-md-3 g-4">
-                            <div class="col">
-                                <div class="card-one z-3 h-60 border-0 rounded-0 bg-transparent rounded-4">
-                                    <!-- <div class="h-100 z-0">
-                                        <img src="/images/latest-games-1.png" class="card-img-top w-100 h-100 rounded-4" alt="game-1">
-                                    </div> -->
+        <!--**************************** our-game section ****************************-->
+        <div id="OUR-GAMES">
+            <section class="our-game container-fluid bg-body-tertiary text-center py-3">
+                <!--**************************** header content of section ****************************-->
+                <article class="header-section py-5 ">
+                    <h2 class="second-font text-main-color fs-6 fw-bold position-relative">OUR GAMES</h2>
+                    <p class="first-font fw-bold text-white fs-1 py-3">Our Latest Games</p>
+                </article>
+                <!--**************************** header content of section end ****************************-->
+                <!--************************************ game slider ************************************-->
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-inner px-2">
+                        <div class="carousel-item active">
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+                                <div class="col">
+                                    <div
+                                        class="card h-300px border-0 rounded-0 bg-transparent rounded-4 position-relative overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4" src="images/latest-games-1.png"
+                                            alt="latest game 1">
+                                        <div class="card-content d-flex flex-row w-75 gap-2 position-absolute ms-2 z-1">
+                                            <span
+                                                class="rounded-pill w-50 bg-second-color text-white py-1 fs-14px fw-bold"><span><i
+                                                        class="fa-solid fa-gamepad text-main-color me-2"></i></span>ADVENTURE</span>
+                                            <span
+                                                class="rounded-pill w-50 bg-second-color text-white py-1 fs-14px fw-bold"><span><i
+                                                        class="fa-solid fa-users text-main-color me-2"></i></span>MULTIPLAYER</span>
+                                        </div>
+                                        <p class="ps-3 second-font fs-5 fw-bold text-black position-absolute z-1">Alien
+                                            Companions</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div
+                                        class="card h-300px border-0 rounded-0 bg-transparent rounded-4 position-relative overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4" src="images/latest-games-2.png"
+                                            alt="latest game 2">
+                                        <div class="card-content d-flex flex-row w-75 gap-2 position-absolute ms-2 z-1">
+                                            <span
+                                                class="rounded-pill w-50 bg-second-color text-white py-1 fs-14px fw-bold"><span><i
+                                                        class="fa-solid fa-flag-checkered text-main-color me-2"></i></span>RACING</span>
+                                            <span
+                                                class="rounded-pill w-50 bg-second-color text-white py-1 fs-14px fw-bold"><span><i
+                                                        class="fa-solid fa-bolt text-main-color me-2"></i></span>SCI-FI</span>
+                                        </div>
+                                        <p class="ps-3 second-font fs-5 fw-bold text-black position-absolute z-1">Cyber
+                                            Run 2099</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div
+                                        class="card h-300px border-0 rounded-0 bg-transparent rounded-4 position-relative overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4" src="images/latest-games-3.png"
+                                            alt="latest game 3">
+                                        <div class="card-content d-flex flex-row w-75 gap-2 position-absolute ms-2 z-1">
+                                            <span
+                                                class="rounded-pill w-50 bg-second-color text-white py-1 fs-14px fw-bold"><span><i
+                                                        class="fa-brands fa-discord text-main-color me-2"></i></span>ACTION</span>
+                                            <span
+                                                class="rounded-pill w-50 bg-second-color text-white py-1 fs-14px fw-bold"><span><i
+                                                        class="fa-solid fa-microchip text-main-color me-2"></i></span>GEFORCE</span>
+                                        </div>
+                                        <p
+                                            class="ps-3 second-font fs-5 fw-bold text-black position-absolute text-start z-1">
+                                            The Legend of Zelda: Tears of the Kingdom</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="card-two h-60 border-0 rounded-0 bg-transparent rounded-4">
-                                    <!-- <img src="/images/latest-games-2.png" class="card-img-top w-100 h-100 rounded-4" alt="game-2"> -->
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+                                <div class="col">
+                                    <div
+                                        class="card h-300px border-0 rounded-0 bg-transparent rounded-4 position-relative overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4" src="images/latest-games-4.png"
+                                            alt="latest game 4">
+                                        <div class="card-content d-flex flex-row w-75 gap-2 position-absolute ms-2 z-1">
+                                            <span
+                                                class="rounded-pill w-50 bg-second-color text-white py-1 fs-14px fw-bold"><span><i
+                                                        class="fa-solid fa-shield-halved text-main-color me-2"></i></span>RPG</span>
+                                            <span
+                                                class="rounded-pill w-50 bg-second-color text-white py-1 fs-14px fw-bold"><span><i
+                                                        class="fa-solid fa-wand-magic-sparkles text-main-color me-2"></i></span>FANTASY</span>
+                                        </div>
+                                        <p class="ps-3 second-font fs-5 fw-bold text-black position-absolute z-1">
+                                            Aetheria Chronicles</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div
+                                        class="card h-300px border-0 rounded-0 bg-transparent rounded-4 position-relative overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4" src="images/latest-games-5.png"
+                                            alt="latest game 5">
+                                        <div class="card-content d-flex flex-row w-75 gap-2 position-absolute ms-2 z-1">
+                                            <span
+                                                class="rounded-pill w-50 bg-second-color text-white py-1 fs-14px fw-bold"><span><i
+                                                        class="fa-solid fa-crosshairs text-main-color me-2"></i></span>SHOOTER</span>
+                                            <span
+                                                class="rounded-pill w-50 bg-second-color text-white py-1 fs-14px fw-bold"><span><i
+                                                        class="fa-solid fa-user-group text-main-color me-2"></i></span>CO-OP</span>
+                                        </div>
+                                        <p class="ps-3 second-font fs-5 fw-bold text-black position-absolute z-1">
+                                            Warfront Protocol</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div
+                                        class="card h-300px border-0 rounded-0 bg-transparent rounded-4 position-relative overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4" src="images/latest-games-6.png"
+                                            alt="latest game 6">
+                                        <div class="card-content d-flex flex-row w-75 gap-2 position-absolute ms-2 z-1">
+                                            <span
+                                                class="rounded-pill w-50 bg-second-color text-white py-1  fs-14px fw-bold"><span><i
+                                                        class="fa-solid fa-dragon text-main-color me-2"></i></span>FOOTBALL</span>
+                                            <span
+                                                class="rounded-pill w-50 bg-second-color text-white py-1  fs-14px fw-bold"><span><i
+                                                        class="fa-solid fa-star text-main-color me-2"></i></span>FANTASY</span>
+                                        </div>
+                                        <p
+                                            class="ps-3 second-font fs-5 fw-bold text-black position-absolute text-start z-1">
+                                            Shot Striker</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="card-three h-60 border-0 rounded-0 bg-transparent rounded-4">
-                                    <img src="/images/latest-games-3.png" class=" w-100 h-100 rounded-4" alt="game-3">
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row row-cols-1 row-cols-md-3 g-4">
+                                <div class="col">
+                                    <div
+                                        class="card h-300px border-0 rounded-0 bg-transparent rounded-4 position-relative overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4" src="images/latest-games-7.png"
+                                            alt="latest game 7">
+                                        <div class="card-content d-flex flex-row w-75 gap-2 position-absolute ms-2 z-1">
+                                            <span
+                                                class="rounded-pill w-50 bg-second-color text-white py-1 fs-14px fw-bold"><span><i
+                                                        class="fa-solid fa-trophy text-main-color me-2"></i></span>SPORTS</span>
+                                            <span
+                                                class="rounded-pill w-50 bg-second-color text-white py-1 fs-14px fw-bold"><span><i
+                                                        class="fa-solid fa-fire text-main-color me-2"></i></span>LEAGUE</span>
+                                        </div>
+                                        <p class="ps-3 second-font fs-5 fw-bold text-black position-absolute z-1">Epic
+                                            Gaming League</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div
+                                        class="card h-300px border-0 rounded-0 bg-transparent rounded-4 position-relative overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4" src="images/latest-games-8.png"
+                                            alt="latest game 8">
+                                        <div class="card-content d-flex flex-row w-75 gap-2 position-absolute ms-2 z-1">
+                                            <span
+                                                class="rounded-pill w-50 bg-second-color text-white py-1 fs-14px fw-bold"><span><i
+                                                        class="fa-solid fa-rocket text-main-color me-2"></i></span>SPACE</span>
+                                            <span
+                                                class="rounded-pill w-50 bg-second-color text-white py-1 fs-14px fw-bold"><span><i
+                                                        class="fa-solid fa-globe text-main-color me-2"></i></span>EXPLORATION</span>
+                                        </div>
+                                        <p class="ps-3 second-font fs-5 fw-bold text-black position-absolute z-1">Barren
+                                            alien worlds</p>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div
+                                        class="card h-300px border-0 rounded-0 bg-transparent rounded-4 position-relative overflow-hidden">
+                                        <img class="w-100 h-100 rounded-4" src="images/latest-games-9.png"
+                                            alt="latest game 9">
+                                        <div class="card-content d-flex flex-row w-75 gap-2 position-absolute ms-2 z-1">
+                                            <span
+                                                class="rounded-pill w-50 bg-second-color text-white py-1  fs-14px fw-bold"><span><i
+                                                        class="fa-solid fa-hat-wizard  text-main-color me-2"></i></span>ACTION</span>
+                                            <span
+                                                class="rounded-pill w-50 bg-second-color text-white py-1  fs-14px fw-bold"><span><i
+                                                        class="fa-solid fa-dungeon text-main-color me-2"></i></span>FUTURISTIC</span>
+                                        </div>
+                                        <p
+                                            class="ps-3 second-font fs-5 fw-bold text-black position-absolute text-start z-1">
+                                            Cloveland Quest</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="..." class="d-block w-100" alt="...">
+                    <div class="slider-buttons d-flex gap-1 justify-content-center  w-100 py-5">
+                        <button
+                            class="carousel-prev bg-transparent border-0 text-white-50 d-flex justify-content-center align-items-center "
+                            type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                            <span class="arrow" aria-hidden="true"><i
+                                    class="fa-solid fa-arrow-left-long p-3 w-100 h-100 rounded-circle"></i></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button
+                            class="carousel-next bg-transparent border-0 text-white-50 d-flex justify-content-center align-items-center"
+                            type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                            <span class="arrow" aria-hidden="true"><i
+                                    class="fa-solid fa-arrow-right-long p-3 w-100 h-100 rounded-circle"></i></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                        <button
+                            class="view-all-btn btn text-main-color second-font fs-6 fw-bold px-4 py-3 border-2 ms-4 border-main-color overflow-hidden position-relative">VIEW
+                            ALL GAMES</button>
                     </div>
                 </div>
-                <div class="slider-buttons d-flex gap-1 justify-content-center  w-100">
-                    <button
-                        class="carousel-prev bg-transparent border-0 text-white-50 d-flex justify-content-center align-items-center "
-                        type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="arrow" aria-hidden="true"><i
-                                class="fa-solid fa-arrow-left-long p-3 w-100 h-100 rounded-circle"></i></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button
-                        class="carousel-next bg-transparent border-0 text-white-50 d-flex justify-content-center align-items-center"
-                        type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="arrow" aria-hidden="true"><i
-                                class="fa-solid fa-arrow-right-long p-3 w-100 h-100 rounded-circle"></i></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                    <button
-                        class="view-all-btn btn text-main-color second-font fs-6 fw-bold px-4 py-3 border-2 ms-4 border-main-color overflow-hidden position-relative">VIEW
-                        ALL GAMES</button>
+        </div>
+        <!--************************************ game slider ************************************-->
+        </section>
+        <!--**************************** our-game section end ****************************-->
+        <!--**************************** what we do section ****************************-->
+        <section id="What-We-Do" class="what-we-do container-fluid bg-body-tertiary text-center py-5 px-4">
+            <!--**************************** header content of section ****************************-->
+            <article class="header-section py-5 px-2">
+                <h2 class="second-font text-main-color fs-6 fw-bold position-relative">WHAT WE DO</h2>
+                <p class="first-font fw-bolder text-white fs-1">More Than Just Games</p>
+                <p class="second-font fw-bold text-white fs-1">We Build<span
+                        class="text-main-color mx-3">Interactive</span>Journeys</p>
+            </article>
+            <!--**************************** header content of section end ****************************-->
+            <!--**************************** cards section ****************************-->
+            <div class="cards row  row-cols-2 row-cols-lg-4  g-4">
+                <div class="col">
+                    <div class="card h-100 rounded-4 bg-third-color justify-content-center" id="custom">
+                        <div class="d-flex flex-column align-items-center gap-3">
+                            <span class="py-4 px-3 rounded-2 bg-fourth-color"><i
+                                    class="fa-solid fa-desktop fa-xl text-main-color"></i></span>
+                            <p class="card-text fs-5 fw-bold first-font text-white">PC Game<br>Development</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 rounded-4 bg-third-color justify-content-center" id="custom">
+                        <div class="d-flex flex-column align-items-center gap-3">
+                            <span class="py-4 px-3 rounded-2 bg-fourth-color"><i
+                                    class="fa-solid fa-mobile-screen-button fa-xl text-main-color"></i></span>
+                            <p class="card-text fs-5 fw-bold first-font text-white">Mobile Game Development</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 rounded-4 border-0">
+                        <img src="images/what-we-do-1.png" class=" rounded-4" alt="what we do 1">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 rounded-4 bg-third-color justify-content-center" id="custom">
+                        <div class="d-flex flex-column align-items-center gap-3">
+                            <span class="py-4 px-3 rounded-2 bg-fourth-color"><i
+                                    class="fa-solid fa-mask fa-xl text-main-color"></i></span>
+                            <p class="card-text fs-5 fw-bold first-font text-white">AR/VR<br>Solutions</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-    <!--************************************ game slider ************************************-->
+            <div class="cards row  row-cols-2 row-cols-lg-4  g-4 mt-2">
+                <div class="col">
+                    <div class="card h-100 rounded-4 bg-third-color justify-content-center" id="custom">
+                        <div class="d-flex flex-column align-items-center gap-3">
+                            <span class="py-4 px-3 rounded-2 bg-fourth-color"><i
+                                    class="fa-solid fa-cubes fa-xl text-main-color"></i></span>
+                            <p class="card-text fs-5 fw-bold first-font text-white">AR/VR<br>Design</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 rounded-4 border-0">
+                        <img src="images/what-we-do-2.png" class="rounded-4" alt="...">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 rounded-4 bg-third-color justify-content-center" id="custom">
+                        <div class="d-flex flex-column align-items-center gap-3">
+                            <span class="py-4 px-3 rounded-2 bg-fourth-color"><i
+                                    class="fa-brands fa-playstation fa-xl text-main-color"></i></span>
+                            <p class="card-text fs-5 fw-bold first-font text-white">PS4 Game<br>Developments</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 rounded-4 bg-third-color justify-content-center" id="custom">
+                        <div class="d-flex flex-column align-items-center gap-3">
+                            <span class="py-4 px-3 rounded-2 bg-fourth-color"><i
+                                    class="fa-solid fa-cube fa-xl text-main-color"></i></span>
+                            <p class="card-text fs-5 fw-bold first-font text-white">3D<br>Modelings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--**************************** cards section end ****************************-->
+            <!--**************************** conveyor card section ****************************-->
+            <div class="conveyor-card overflow-hidden position-relative">
+                <div class="rtl-card">
+                    <img class="rounded-3 " src="images/logo-1.jpg" alt="logo 1">
+                    <img class="rounded-3 " src="images/logo-2.jpg" alt="logo 2">
+                    <img class="rounded-3 " src="images/logo-3.jpg" alt="logo 3">
+                    <img class="rounded-3 " src="images/logo-4.jpg" alt="logo 4">
+                    <img class="rounded-3 " src="images/logo-5.jpg" alt="logo 5">
+                    <img class="rounded-3 " src="images/logo-6.jpg" alt="logo 6">
+                    <img class="rounded-3 " src="images/logo-7.jpg" alt="logo 7">
+                    <img class="rounded-3 " src="images/logo-8.jpg" alt="logo 8">
+                    <img class="rounded-3 " src="images/logo-9.jpg" alt="logo 9">
+                    <img class="rounded-3 " src="images/logo-10.jpg" alt="logo 10">
+                    <img class="rounded-3 " src="images/logo-11.jpg" alt="logo 11">
+                    <img class="rounded-3 " src="images/logo-12.jpg" alt="logo 12">
+                </div>
+                <div class="ltr-card">
+                    <img class="rounded-3 " src="images/logo-1.jpg" alt="logo 1">
+                    <img class="rounded-3 " src="images/logo-2.jpg" alt="logo 2">
+                    <img class="rounded-3 " src="images/logo-3.jpg" alt="logo 3">
+                    <img class="rounded-3 " src="images/logo-4.jpg" alt="logo 4">
+                    <img class="rounded-3 " src="images/logo-5.jpg" alt="logo 5">
+                    <img class="rounded-3 " src="images/logo-6.jpg" alt="logo 6">
+                    <img class="rounded-3 " src="images/logo-7.jpg" alt="logo 7">
+                    <img class="rounded-3 " src="images/logo-8.jpg" alt="logo 8">
+                    <img class="rounded-3 " src="images/logo-9.jpg" alt="logo 9">
+                    <img class="rounded-3 " src="images/logo-10.jpg" alt="logo 10">
+                    <img class="rounded-3 " src="images/logo-11.jpg" alt="logo 11">
+                    <img class="rounded-3 " src="images/logo-12.jpg" alt="logo 12">
+                </div>
+            </div>
+            <!--**************************** conveyor card section end ****************************-->
         </section>
+        <!--**************************** what we do section end ****************************-->
+        <!--**************************** our team section ****************************-->
+        <section id="Our-Team" class="our-team container-fluid bg-body-tertiary text-center pb-4 px-4">
+            <!--**************************** header content of section ****************************-->
+            <article class="header-section px-2">
+                <h2 class="second-font text-main-color fs-6 fw-bold position-relative">OUR TEAM</h2>
+                <p class="first-font fw-bolder text-white fs-1">Our Best Team Members</p>
+                <p class="second-font fs-5 text-white-50">Meet the professional gamers and experts behind our success
+                </p>
+            </article>
+            <!--**************************** header content of section end ****************************-->
+            <div class="row row-cols-1 row-cols-md-4 g-4 h-350px py-5">
+                <div class="col">
+                    <div class="card h-100 rounded-4 border-0 position-relative overflow-hidden">
+                        <img src="images/avatar-1.png" class="h-100 rounded-4" alt="Avatar 1"> 
+                        <div class="card-body text-white text-start position-absolute ms-2  ">
+                            <div class="left ">
+                            <h3 class="card-title first-font h4">Alex "Phantom" Chen</h3>
+                            <p class="card-text second-font h6 text-main-color">Pro Player - VALORANT.</p>
+                            <span class="fs-14px second-font text-second-color">World Champion 2023</span>
+                            </div>
+                            <p class="team second-font text-main-color fw-bold position-absolute">PHANTOM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 rounded-4 border-0 position-relative overflow-hidden">
+                        <img src="images/avatar-2.png" class="h-100 rounded-4" alt="Avatar 2"> 
+                        <div class="card-body text-white text-start position-absolute w-100">
+                            <div class="left m-0">
+                            <h3 class="card-title first-font h5">Ali "Nova" Ahmed</h3>
+                            <p class="card-text second-font  text-main-color">Pro Player - League of Legends</p>
+                            <span class="fs-14px second-font text-second-color">MVP 2023 Season</span>
+                            </div>
+                            <p class="team second-font text-main-color fw-bold position-absolute mt-0">NOVA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 rounded-4 border-0 position-relative overflow-hidden">
+                        <img src="images/avatar-3.png" class="h-100 rounded-4" alt="Avatar 3"> 
+                        <div class="card-body text-white text-start position-absolute ms-2 ">
+                            <div class="left ms-1">
+                            <h3 class="card-title first-font h4">Marcus "Viper" Rodriguez</h3>
+                            <p class="card-text second-font mb-0 h6 text-main-color">Head Coach - CS:GO</p>
+                            <span class="fs-14px second-font text-second-color">5x Major Winner</span>
+                            </div>
+                            <p class="team second-font text-main-color fw-bold position-absolute">VIPER</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 rounded-4 border-0 position-relative overflow-hidden ">
+                        <img src="images/avatar-4.png" class="h-100 rounded-4" alt="Avatar 4"> 
+                        <div class="card-body text-white text-start position-absolute w-100 ">
+                            <div class="left ms-1">
+                            <h3 class="card-title first-font h4">Seif "Saga" Usama</h3>
+                            <p class="card-text second-font mb-0 h6 text-main-color">Strategic Analyst</p>
+                            <span class="fs-14px second-font text-second-color">Data Science Expert</span>
+                            </div>
+                            <p class="team second-font text-main-color fw-bold position-absolute mb-4 bottom-0">SAGA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4 h-350px pt-5 mb-3">
+                <div class="col">
+                    <div class="card h-100 rounded-4 border-0 position-relative overflow-hidden ">
+                        <img src="images/avatar-5.png" class="h-100 rounded-4" alt="Avatar 5"> 
+                        <div class="card-body text-white text-start position-absolute w-100 ">
+                            <div class="left ms-1">
+                            <h3 class="card-title first-font h4">Jake "Storm" Wilson</h3>
+                            <p class="card-text second-font mb-0 h6 text-main-color">Pro Player - Apex Legends</p>
+                            <span class="fs-14px second-font text-second-color">Rising Star 2023</span>
+                            </div>
+                            <p class="team second-font text-main-color fw-bold position-absolute">STORM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 rounded-4 border-0 position-relative overflow-hidden ">
+                        <img src="images/avatar-6.png" class="h-100 rounded-4" alt="Avatar 6"> 
+                        <div class="card-body text-white text-start position-absolute w-100 ">
+                            <div class="left ms-1">
+                            <h3 class="card-title first-font h4">David "Titan" Park</h3>
+                            <p class="card-text second-font mb-0 h6 text-main-color">Team Captain - Dota 2</p>
+                            <span class="fs-14px second-font text-second-color">The International Winner</span>
+                            </div>
+                            <p class="team second-font text-main-color fw-bold position-absolute mb-0">TITAN</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 rounded-4 border-0 position-relative overflow-hidden ">
+                        <img src="images/avatar-7.png" class="h-100 rounded-4" alt="Avatar 7"> 
+                        <div class="card-body text-white text-start position-absolute w-100 ">
+                            <div class="left ms-1">
+                            <h3 class="card-title first-font h4">Khaled "Phoenix" Ali</h3>
+                            <p class="card-text second-font mb-0 h6 text-main-color">Content Creator</p>
+                            <span class="fs-14px second-font text-second-color">2M+ Followers</span>
+                            </div>
+                            <p class="team second-font text-main-color fw-bold position-absolute mb-0">PHOENIX</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 rounded-4 border-0 position-relative overflow-hidden ">
+                        <img src="images/avatar-8.png" class="h-100 rounded-4" alt="Avatar 8"> 
+                        <div class="card-body text-white text-start position-absolute w-100 ">
+                            <div class="left ms-1">
+                            <h3 class="card-title first-font h4">Ryan "Ghost" Miller</h3>
+                            <p class="card-text second-font mb-0 h6 text-main-color">Team Manager</p>
+                            <span class="fs-14px second-font text-second-color">Operations Lead</span>
+                            </div>
+                            <p class="team second-font text-main-color fw-bold position-absolute mb-0">GHOST</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--**************************** our team section end ****************************-->
+
     </main>
     <footer></footer>
     <!--**************************** script Bootstrap [bundle] ****************************-->
