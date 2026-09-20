@@ -33,4 +33,7 @@
     .what-we-do .cards .card p {
         font-size: 16px !important;
     }
+    .contactUs form .check {
+        font-size: 12px !important;
+    }
 }
